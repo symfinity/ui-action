@@ -22,6 +22,15 @@ $result = $rules->validate(
 
 UX Blocks consume this package in **PHPUnit only** (see `ux-blocks-core` `ButtonActionTest`).
 
+## Primal lab reference (WoWi)
+
+Source: [`var/primal/td-cc-wowi`](../../../../var/primal/td-cc-wowi) (reference only).
+
+| WoWi pattern | Notes for ui-action |
+|--------------|---------------------|
+| Glossary links with real `href` + intercepted click | Prefer `navigate` intent with valid URLs; modal open stays in `ux-runtime` |
+| Section / contact click tracking ids | Host `data-*` hooks — validate markup context, do not embed Tealium in package |
+
 ## Tests
 
 ```bash
