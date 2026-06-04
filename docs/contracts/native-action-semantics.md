@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Applies to:** `symfinity/ui-action`, `symfinity/ux-blocks-core` interactive roles  
 **Shipped:** SYMFINITY-7 (2026-06-01)  
-**Constitution:** [Chameleon UI Layer Constitution](../../../../../../specs/symfinity/symfinity/_org/chameleon-ui-constitution.md) § III
+**Constitution:** Chameleon UI Layer Constitution § III
 
 ## Principle
 

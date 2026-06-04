@@ -1,10 +1,53 @@
-# symfinity/ui-action
+<div align="center">
 
-Layer III validation library for native HTTP action semantics (`navigate`, `submit`, `delete`, `download`).
+# Ui Action
 
-- No Symfony bundle, Twig extensions, or Turbo in v0.
-- Normative contracts: [`docs/contracts/`](docs/contracts/) (SYMFINITY-7 shipped 2026-06-01).
-- Demo: `ux-blocks-demo` Native actions pack at `/actions`.
+### Symfinity UI Action — native HTTP action semantics validation (navigate, submit, delete, download)
+
+[![PHP Version](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat&logo=php&logoColor=white)](composer.json)
+
+<br/>
+[![PHPUnit](https://github.com/symfinity/symfinity/actions/workflows/phpunit.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/phpunit.yml)
+[![Coverage](https://github.com/symfinity/symfinity/actions/workflows/coverage.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/coverage.yml)
+[![PHPStan](https://github.com/symfinity/symfinity/actions/workflows/phpstan.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/phpstan.yml)
+<br/>
+[![Psalm](https://github.com/symfinity/symfinity/actions/workflows/psalm.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/psalm.yml)
+[![Infection](https://github.com/symfinity/symfinity/actions/workflows/infection.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/infection.yml)
+[![Code Style](https://img.shields.io/badge/code%20style-CS%20Fixer-5c4dbc?style=flat)](https://github.com/symfinity/symfinity/actions/workflows/php-cs-fixer.yml)
+<br/>
+[![Release](https://img.shields.io/packagist/v/symfinity/ui-action.svg?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/symfinity/ui-action)
+[![Downloads](https://img.shields.io/packagist/dt/symfinity/ui-action.svg?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/symfinity/ui-action)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
+</div>
+
+---
+
+## Documentation
+
+| Topic | Page |
+|-------|------|
+| Configuration | [docs/configuration.md](docs/configuration.md) |
+| Index | [docs/index.md](docs/index.md) |
+| Installation | [docs/installation.md](docs/installation.md) |
+| Quickstart | [docs/quickstart.md](docs/quickstart.md) |
+| Reference | [docs/reference.md](docs/reference.md) |
+| Troubleshooting | [docs/troubleshooting.md](docs/troubleshooting.md) |
+| Upgrade | [docs/upgrade.md](docs/upgrade.md) |
+| Usage | [docs/usage.md](docs/usage.md) |
+| Contracts/Blocks Integration | [docs/contracts/blocks-integration.md](docs/contracts/blocks-integration.md) |
+| Contracts/Native Action Semantics | [docs/contracts/native-action-semantics.md](docs/contracts/native-action-semantics.md) |
+| Contracts/Validation Api | [docs/contracts/validation-api.md](docs/contracts/validation-api.md) |
+
+## Requirements
+
+- PHP 8.2+
+
+## Install
+
+```bash
+composer require symfinity/ui-action
+```
 
 ## Usage
 
@@ -21,15 +64,6 @@ $result = $rules->validate(
 ```
 
 UX Blocks consume this package in **PHPUnit only** (see `ux-blocks-core` `ButtonActionTest`).
-
-## Primal lab reference (WoWi)
-
-Source: [`var/primal/td-cc-wowi`](../../../../var/primal/td-cc-wowi) (reference only).
-
-| WoWi pattern | Notes for ui-action |
-|--------------|---------------------|
-| Glossary links with real `href` + intercepted click | Prefer `navigate` intent with valid URLs; modal open stays in `ux-runtime` |
-| Section / contact click tracking ids | Host `data-*` hooks — validate markup context, do not embed Tealium in package |
 
 ## Tests
 
