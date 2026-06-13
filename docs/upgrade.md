@@ -1,11 +1,27 @@
 # Upgrade and migration
 
-## {Version} to {Version}
+## First release (`v0.1.0`)
 
-### Breaking changes
+This is the initial public release under `symfinity/ui-action`. There is no migration from a prior Packagist package.
 
-### Migration steps
+### What you get in v0.1.0
+
+- `ActionIntent` enum (`navigate`, `submit`, `delete`, `download`)
+- `NativeActionRules::validate()` with stable violation codes
+- PHPUnit fixtures for valid/invalid markup contexts per intent
+- Consumer handbook under `docs/`
+
+### Consumer checklist
+
+1. `composer require symfinity/ui-action:^0.1`
+2. Use validation in tests or tooling — see [Quick start](quickstart.md)
+3. For UX Blocks interactive roles, follow [UX Blocks integration](contracts/blocks-integration.md)
+
+## Future versions
+
+Breaking changes to enum cases or violation codes will ship with a semver minor/major bump and notes in this file and [CHANGELOG](../CHANGELOG.md).
 
 ## See also
 
-[Configuration](configuration.md)
+- [Configuration](configuration.md)
+- [Native action semantics](contracts/native-action-semantics.md)

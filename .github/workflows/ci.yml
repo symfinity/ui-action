@@ -1,0 +1,40 @@
+name: CI
+
+# Matrix: maintained PHP (library — no Symfony runtime dependency).
+# Regenerated 2026-06-14 — refresh PHP minors when php.net/releases/states changes.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.2', '8.3', '8.4', '8.5']
+
+    name: PHPUnit + PHPStan (PHP ${{ matrix.php }})
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, xml, ctype, iconv
+          coverage: none
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer update --prefer-dist --no-interaction --no-progress
+
+      - name: PHPUnit
+        run: vendor/bin/phpunit --colors=always
+
+      - name: PHPStan
+        run: vendor/bin/phpstan analyse --memory-limit=512M

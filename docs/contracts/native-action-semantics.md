@@ -1,9 +1,7 @@
-# Contract: Native action semantics (UI Action layer)
+# Native action semantics
 
 **Version:** 1.0  
-**Applies to:** `symfinity/ui-action`, `symfinity/ux-blocks-core` interactive roles  
-**Shipped:** SYMFINITY-7 (2026-06-01)  
-**Constitution:** Chameleon UI Layer Constitution § III
+**Applies to:** `symfinity/ui-action`, `symfinity/ux-blocks-core` interactive roles
 
 ## Principle
 
@@ -28,4 +26,4 @@ If an element performs HTTP-visible behaviour in v0, it **MUST** use native HTML
 
 ## Verification
 
-Demo and component tests **MUST** assert absence of `data-ui-action` on native-action pages unless **008** is explicitly installed and documented.
+Demo and component tests **MUST** assert absence of `data-ui-action` on native-action pages unless a documented runtime action module is explicitly installed.

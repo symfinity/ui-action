@@ -1,8 +1,7 @@
-# Contract: UI Action validation API
+# Validation API
 
 **Version:** 1.0  
-**Applies to:** `symfinity/ui-action` (`packages/ui-action/`)  
-**Shipped:** SYMFINITY-7 (2026-06-01)  
+**Applies to:** `symfinity/ui-action`  
 **Related:** [native-action-semantics](./native-action-semantics.md), [blocks-integration](./blocks-integration.md)
 
 ## Namespace
@@ -59,8 +58,8 @@ public function validate(ActionIntent $intent, ActionMarkupContext $context): Va
 
 ## PHPUnit fixtures
 
-Package **MUST** ship `tests/Fixtures/intent-*.json` (or PHP data providers) covering valid + invalid row per intent. Blocks tests **MAY** import the same fixtures via `require-dev`.
+The package ships `tests/Fixtures/IntentFixtures.php` covering valid + invalid rows per intent. Blocks tests **MAY** import the same patterns via `require-dev`.
 
 ## Versioning
 
-Breaking changes to codes or enum cases require contract version bump and ROADMAP amendment.
+Breaking changes to codes or enum cases require a contract version bump and a semver release.

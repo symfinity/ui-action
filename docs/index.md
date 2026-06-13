@@ -1,16 +1,16 @@
-# Overview
+# UI Action
 
-Package handbook for this library.
+Validate that interactive markup uses **native HTTP semantics** — anchors for navigation and download, POST forms for submit and delete — without `data-ui-action` hooks.
 
-## Pages
+## Handbook
 
-- [Installation](installation.md)
-- [Quickstart](quickstart.md)
-- [Configuration](configuration.md)
-- [Usage](usage.md)
-- [Upgrade](upgrade.md)
-- [Troubleshooting](troubleshooting.md)
-- [Reference](reference.md)
-- [Contracts — Blocks Integration](contracts/blocks-integration.md)
-- [Contracts — Native Action Semantics](contracts/native-action-semantics.md)
-- [Contracts — Validation Api](contracts/validation-api.md)
+- [Installation](installation.md) — Composer install
+- [Quick start](quickstart.md) — validate your first intent
+- [Configuration](configuration.md) — programmatic use and Symfony wiring
+- [Upgrade](upgrade.md) — first release and future migrations
+
+## Semantics and API
+
+- [Native action semantics](contracts/native-action-semantics.md) — intent → HTML shape (v0)
+- [Validation API](contracts/validation-api.md) — `NativeActionRules`, violation codes
+- [UX Blocks integration](contracts/blocks-integration.md) — how component tests consume this library

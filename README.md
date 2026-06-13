@@ -1,19 +1,12 @@
 <div align="center">
 
-# Ui Action
+# UI Action
 
-### Symfinity UI Action — native HTTP action semantics validation (navigate, submit, delete, download)
+### Native HTTP action semantics validation for Symfony UI (navigate, submit, delete, download)
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat&logo=php&logoColor=white)](composer.json)
-
 <br/>
-[![PHPUnit](https://github.com/symfinity/symfinity/actions/workflows/phpunit.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/phpunit.yml)
-[![Coverage](https://github.com/symfinity/symfinity/actions/workflows/coverage.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/coverage.yml)
-[![PHPStan](https://github.com/symfinity/symfinity/actions/workflows/phpstan.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/phpstan.yml)
-<br/>
-[![Psalm](https://github.com/symfinity/symfinity/actions/workflows/psalm.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/psalm.yml)
-[![Infection](https://github.com/symfinity/symfinity/actions/workflows/infection.yml/badge.svg)](https://github.com/symfinity/symfinity/actions/workflows/infection.yml)
-[![Code Style](https://img.shields.io/badge/code%20style-CS%20Fixer-5c4dbc?style=flat)](https://github.com/symfinity/symfinity/actions/workflows/php-cs-fixer.yml)
+[![CI](https://github.com/symfinity/ui-action/actions/workflows/ci.yml/badge.svg)](https://github.com/symfinity/ui-action/actions/workflows/ci.yml)
 <br/>
 [![Release](https://img.shields.io/packagist/v/symfinity/ui-action.svg?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/symfinity/ui-action)
 [![Downloads](https://img.shields.io/packagist/dt/symfinity/ui-action.svg?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/symfinity/ui-action)
@@ -21,35 +14,26 @@
 
 </div>
 
----
+> [!NOTE]
+> **Read-only mirror.** See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Documentation
+## Features
 
-| Topic | Page |
-|-------|------|
-| Configuration | [docs/configuration.md](docs/configuration.md) |
-| Index | [docs/index.md](docs/index.md) |
-| Installation | [docs/installation.md](docs/installation.md) |
-| Quickstart | [docs/quickstart.md](docs/quickstart.md) |
-| Reference | [docs/reference.md](docs/reference.md) |
-| Troubleshooting | [docs/troubleshooting.md](docs/troubleshooting.md) |
-| Upgrade | [docs/upgrade.md](docs/upgrade.md) |
-| Usage | [docs/usage.md](docs/usage.md) |
-| Contracts/Blocks Integration | [docs/contracts/blocks-integration.md](docs/contracts/blocks-integration.md) |
-| Contracts/Native Action Semantics | [docs/contracts/native-action-semantics.md](docs/contracts/native-action-semantics.md) |
-| Contracts/Validation Api | [docs/contracts/validation-api.md](docs/contracts/validation-api.md) |
+- **Native HTTP intents** — `navigate`, `submit`, `delete`, `download` backed enum
+- **Markup validation** — `NativeActionRules` checks tag, attributes, and form context without parsing HTML
+- **Stable violation codes** — machine-readable failures for PHPUnit and CI
+- **Zero Symfony runtime** — pure PHP library; optional autowire in Symfony apps
+- **UX Blocks test hook** — component packages assert DOM semantics in dev/test
 
-## Requirements
-
-- PHP 8.2+
-
-## Install
+## Installation
 
 ```bash
 composer require symfinity/ui-action
 ```
 
-## Usage
+See [Installation](docs/installation.md) for requirements and a smoke test.
+
+## Quick Start
 
 ```php
 use Symfinity\UiAction\ActionIntent;
@@ -63,11 +47,28 @@ $result = $rules->validate(
 );
 ```
 
-UX Blocks consume this package in **PHPUnit only** (see `ux-blocks-core` `ButtonActionTest`).
+See [Quick start](docs/quickstart.md) for submit, delete, download examples and violation handling.
 
-## Tests
+## Documentation
 
-```bash
-cd src/symfinity
-./bin/php vendor/bin/phpunit packages/ui-action/tests/
-```
+- **[Quick start](docs/quickstart.md)** — validate intents in minutes
+- **[Installation](docs/installation.md)** — Composer install and smoke test
+- **[Configuration](docs/configuration.md)** — programmatic use and Symfony wiring
+- **[Native action semantics](docs/contracts/native-action-semantics.md)** — HTML shape per intent
+- **[Validation API](docs/contracts/validation-api.md)** — types and violation codes
+- **[UX Blocks integration](docs/contracts/blocks-integration.md)** — PHPUnit in component packages
+- **[Upgrade](docs/upgrade.md)** — first release notes
+
+## Requirements
+
+- PHP 8.2 or higher
+
+## Support
+
+- [GitHub Issues](https://github.com/symfinity/ui-action/issues)
+- [Security](.github/SECURITY.md)
+- [Contributing](CONTRIBUTING.md)
+
+## License
+
+[MIT](LICENSE)

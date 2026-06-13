@@ -1,9 +1,8 @@
-# Contract: UI Action ↔ UX Blocks integration
+# UX Blocks integration
 
 **Version:** 1.0  
 **Applies to:** `symfinity/ui-action`, `symfinity/ux-blocks-core`  
-**Shipped:** SYMFINITY-7 (2026-06-01)  
-**Related:** port-semantics-ref, [native-action-semantics](./native-action-semantics.md), [validation-api](./validation-api.md)
+**Related:** [native-action-semantics](./native-action-semantics.md), [validation-api](./validation-api.md)
 
 ## Principle
 
