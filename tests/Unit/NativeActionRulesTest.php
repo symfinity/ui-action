@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 use Symfinity\UiAction\ActionIntent;
 use Symfinity\UiAction\ActionMarkupContext;
 use Symfinity\UiAction\NativeActionRules;
-use Symfinity\UiAction\Tests\Fixtures\IntentFixtures;
+use Symfinity\UiAction\Tests\Support\IntentFixtures;
 
 final class NativeActionRulesTest extends TestCase
 {

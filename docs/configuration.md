@@ -37,7 +37,7 @@ public function __construct(
 
 ## Test fixtures
 
-The package ships PHP fixtures in `tests/Fixtures/IntentFixtures.php` covering valid and invalid rows per intent. Component packages may `require-dev symfinity/ui-action` and reuse the same patterns in DOM assertion tests.
+The package ships PHP fixtures in `tests/Support/IntentFixtures.php` covering valid and invalid rows per intent. Component packages may `require-dev symfinity/ui-action` and reuse the same patterns in DOM assertion tests.
 
 ## See also
 

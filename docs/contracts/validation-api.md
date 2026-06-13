@@ -58,7 +58,7 @@ public function validate(ActionIntent $intent, ActionMarkupContext $context): Va
 
 ## PHPUnit fixtures
 
-The package ships `tests/Fixtures/IntentFixtures.php` covering valid + invalid rows per intent. Blocks tests **MAY** import the same patterns via `require-dev`.
+The package ships `tests/Support/IntentFixtures.php` covering valid + invalid rows per intent. Blocks tests **MAY** import the same patterns via `require-dev`.
 
 ## Versioning
 
