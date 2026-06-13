@@ -2,7 +2,7 @@
 
 # UI Action
 
-### Native HTTP action semantics validation for Symfony UI (navigate, submit, delete, download)
+### Native HTTP action semantics validation (navigate, submit, delete, download)
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat&logo=php&logoColor=white)](composer.json)
 <br/>
