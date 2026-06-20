@@ -1,6 +1,6 @@
 {
     "name": "symfinity/ui-action",
-    "description": "Symfinity UI Action — native HTTP action semantics validation (navigate, submit, delete, download)",
+    "description": "Native HTTP action semantics validation (navigate, submit, delete, download)",
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/symfinity/ui-action",
