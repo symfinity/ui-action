@@ -7,6 +7,7 @@ Validate that interactive markup uses **native HTTP semantics** — anchors for 
 - [Installation](installation.md) — Composer install
 - [Quick start](quickstart.md) — validate your first intent
 - [Configuration](configuration.md) — programmatic use and Symfony wiring
+- [Usage](usage.md) — validate intents in app code and PHPUnit
 - [Upgrade](upgrade.md) — first release and future migrations
 
 ## Semantics and API
