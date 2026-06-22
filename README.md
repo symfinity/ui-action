@@ -70,18 +70,6 @@ See [Quick start](docs/quickstart.md) for submit, delete, download examples and 
 - [Security](.github/SECURITY.md)
 - [Contributing](CONTRIBUTING.md)
 
-## R2 release train (maintainers)
-
-PHP library — no Symfony bundle. Flex recipe uses empty `bundles` + `post-install.txt` only. Tag with **`ui-kernel`**, **`ui-themer`**, and **`ux-blocks`** in the same R2 coordination event.
-
-| Before tag | Notes |
-|------------|-------|
-| Flex recipe `recipes/symfinity/ui-action/0.1/` | No config copy; handbook under `docs/` |
-| Split row present in product `mono.json` | Independent of kernel publish order |
-| `composer test` + phpstan green | No hard symfinity deps |
-
-Suggest pairing with `symfinity/ux-blocks` in component package tests — see [UX Blocks integration](docs/contracts/blocks-integration.md).
-
 ## License
 
 [MIT](LICENSE)
