@@ -15,15 +15,15 @@
 </div>
 
 > [!NOTE]
-> **Read-only mirror.** See [CONTRIBUTING.md](CONTRIBUTING.md).
+> **Read-only mirror.**
+> See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose changes.
 
 ## Features
 
-- **Native HTTP intents** — `navigate`, `submit`, `delete`, `download` backed enum
-- **Markup validation** — `NativeActionRules` checks tag, attributes, and form context without parsing HTML
+- **Native HTTP intents** — navigate, submit, delete, and download
+- **Markup validation** — checks tag, attributes, and form context without parsing HTML
 - **Stable violation codes** — machine-readable failures for PHPUnit and CI
-- **Zero Symfony runtime** — pure PHP library; optional autowire in Symfony apps
-- **UX Blocks test hook** — component packages assert DOM semantics in dev/test
+- **Zero framework coupling** — pure PHP library; optional Symfony autowiring
 
 ## Installation
 
@@ -55,10 +55,7 @@ See [Quick start](docs/quickstart.md) for submit, delete, download examples and 
 - **[Installation](docs/installation.md)** — Composer install and smoke test
 - **[Configuration](docs/configuration.md)** — programmatic use and Symfony wiring
 - **[Usage](docs/usage.md)** — validate intents in app code and PHPUnit
-- **[Native action semantics](docs/contracts/native-action-semantics.md)** — HTML shape per intent
-- **[Validation API](docs/contracts/validation-api.md)** — types and violation codes
-- **[UX Blocks integration](docs/contracts/blocks-integration.md)** — PHPUnit in component packages
-- **[Upgrade](docs/upgrade.md)** — first release notes
+- **[Upgrade](docs/upgrade.md)** — version migration
 
 ## Requirements
 
