@@ -5,11 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.1] - 2026-06-22
+## [0.1.1] - 2026-06-25
 
 ### Changed
 
 - Handbook: [docs/usage.md](docs/usage.md) with programmatic validation and PHPUnit examples; index and README cross-links
+- README trimmed — duplicate handbook prose removed; points to `docs/usage.md` for examples
 - Composer `description` aligned with split mirror naming (no API change)
 
 ### Notes

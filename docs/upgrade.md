@@ -21,8 +21,13 @@ This is the initial public release under `symfinity/ui-action`. There is no migr
 
 Documentation patch after [v0.1.0](https://github.com/symfinity/ui-action/releases/tag/v0.1.0). No PHP API or violation code changes.
 
+```bash
+composer update symfinity/ui-action
+```
+
 1. Optional: read [Usage](usage.md) for application and PHPUnit patterns
-2. No Composer constraint change — stay on `^0.1`
+2. README points to the handbook instead of duplicating examples
+3. No Composer constraint change — stay on `^0.1`
 
 ## Future versions
 
