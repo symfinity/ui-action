@@ -53,6 +53,12 @@
             "dev-main": "0.1.x-dev"
         }
     },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/serotoninja"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
