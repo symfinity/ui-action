@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] - 2026-06-29
+
+### Added
+
+- **[ROADMAP.md](ROADMAP.md)** — public milestone roadmap from 0.1.x through 1.0.x
+- **[SUPPORTERS.md](SUPPORTERS.md)** — sponsor acknowledgment page linked from Symfinity OSS funding
+- **GitHub Sponsors metadata** — `composer.json` `funding` entry and `.github/FUNDING.yml`
+
+### Notes
+
+- No public API or violation code changes — documentation and maintainer metadata only
+- PHP library; Flex recipe `0.1` unchanged (`^0.1`, empty `bundles`)
+
 ## [0.1.1] - 2026-06-25
 
 ### Changed

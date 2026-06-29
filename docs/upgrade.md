@@ -29,6 +29,18 @@ composer update symfinity/ui-action
 2. README points to the handbook instead of duplicating examples
 3. No Composer constraint change — stay on `^0.1`
 
+## v0.1.2
+
+Maintainer metadata and roadmap after [v0.1.1](https://github.com/symfinity/ui-action/releases/tag/v0.1.1). No PHP API or violation code changes.
+
+```bash
+composer update symfinity/ui-action
+```
+
+1. Optional: read [ROADMAP](../ROADMAP.md) for planned milestones through 1.0.x
+2. [SUPPORTERS.md](../SUPPORTERS.md) lists GitHub Sponsors backing Symfinity OSS
+3. No Composer constraint change — stay on `^0.1`
+
 ## Future versions
 
 Breaking changes to enum cases or violation codes will ship with a semver minor/major bump and notes in this file and [CHANGELOG](../CHANGELOG.md).
