@@ -1,3 +1,7 @@
+---
+integration_profile: P0
+---
+
 # UI Action
 
 Validate that interactive markup uses **native HTTP semantics** — anchors for navigation and download, POST forms for submit and delete — without `data-ui-action` hooks.
