@@ -41,6 +41,18 @@ composer update symfinity/ui-action
 2. [SUPPORTERS.md](../SUPPORTERS.md) lists GitHub Sponsors backing Symfinity OSS
 3. No Composer constraint change — stay on `^0.1`
 
+## v0.1.3
+
+OOTB verification and split-mirror test hygiene after [v0.1.2](https://github.com/symfinity/ui-action/releases/tag/v0.1.2). No PHP API or violation code changes.
+
+```bash
+composer update symfinity/ui-action
+```
+
+1. Optional: follow [Verification](verification.md) for P0 clean-app smoke on a fresh Symfony project
+2. Handbook index declares `integration_profile: P0` for consumer OOTB tooling
+3. No Composer constraint change — stay on `^0.1`
+
 ## Future versions
 
 Breaking changes to enum cases or violation codes will ship with a semver minor/major bump and notes in this file and [CHANGELOG](../CHANGELOG.md).

@@ -13,6 +13,7 @@ Validate that interactive markup uses **native HTTP semantics** — anchors for 
 - [Configuration](configuration.md) — programmatic use and Symfony wiring
 - [Usage](usage.md) — validate intents in app code and PHPUnit
 - [Upgrade](upgrade.md) — first release and future migrations
+- [Verification](verification.md) — P0 integration profile and clean-app smoke
 
 ## Semantics and API
 

@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-07-05
+
+### Added
+
+- Handbook [Verification](docs/verification.md) — P0 integration profile and clean-app smoke (`composer require`, sample intent validation)
+- `integration_profile: P0` frontmatter on handbook index (OOTB consumer experience)
+
+### Changed
+
+- PHPUnit bootstrap: `tests/bootstrap.php` resolves monorepo or split-mirror Composer autoload (split CI parity)
+- Split mirror CI: Composer package cache and `COMPOSER_AUTH` for reliable dependency installs
+
+### Notes
+
+- No public API or violation code changes — OOTB documentation and test bootstrap hygiene
+- PHP library; Flex recipe `0.1` unchanged (`^0.1`, empty `bundles`)
+
 ## [0.1.2] - 2026-06-29
 
 ### Added
