@@ -1,0 +1,64 @@
+{
+    "name": "symfinity/ui-action",
+    "description": "Native HTTP action semantics validation (navigate, submit, delete, download)",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/symfinity/ui-action",
+    "support": {
+        "issues": "https://github.com/symfinity/ui-action/issues",
+        "source": "https://github.com/symfinity/ui-action"
+    },
+    "authors": [
+        {
+            "name": "Symfinity",
+            "email": "dev@symfinity.net",
+            "homepage": "https://symfinity.net/"
+        }
+    ],
+    "keywords": [
+        "symfinity",
+        "html",
+        "validation",
+        "accessibility",
+        "ux",
+        "http",
+        "forms"
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Symfinity\\UiAction\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Symfinity\\UiAction\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpstan": "phpstan analyse --memory-limit=512M"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/serotoninja"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
